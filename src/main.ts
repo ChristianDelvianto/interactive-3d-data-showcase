@@ -4,19 +4,10 @@ import loginLayout from './layout/login/index.ts'
 import { isOpen, toggle } from './layout/update_logs/index.ts'
 import loadingLayout from './layout/loading/index.ts'
 import { addNavigation, init, users, windowResize } from './layout/three/index.ts'
+import type { UserCSV, UserObject } from './types/user'
 
 declare global {
     const google: any;
-}
-
-interface UserObject {
-    id: number,
-    name: string | '',
-    age: number | 0,
-    interest: string | '',
-    country: string | '',
-    photo: string | '',
-    net_worth: number | 0
 }
 
 // Sheet data
@@ -48,24 +39,22 @@ async function getLocalData(): Promise<void> {
     // Start loading
     document.body.appendChild(loadingLayout)
 
-    const { data, errors } = await Papa.parse(text, {
-                                header: true,
-                            })
+    const { data } = Papa.parse<UserCSV>(text, {
+                        header: true,
+                    })
 
-    for (let i: number = 0; i < data.length; i++) {
-        const row = data[i]
+    for (let i = 0; i < data.length; i++) {
+        let row = data[i]
 
-        const user: UserObject = {
-                        id: i + 1,
-                        name: row.Name,
-                        photo: row.Photo,
-                        age: parseInt(row.Age) || 0,
-                        country: row.Country ?? '',
-                        interest: (row.Interest ?? '').toLowerCase(),
-                        net_worth: Number(row['Net Worth'].replace(/[$,]/g, ''))
-                    }
-
-        users.push(user)
+        users.push({
+            id: i + 1,
+            name: row.Name,
+            photo: row.Photo,
+            age: parseInt(row['Age']),
+            country: row.Country ?? '',
+            interest: (row.Interest ?? '').toLowerCase(),
+            net_worth: Number(row['Net Worth'].replace(/[$,]/g, ''))
+        })
     }
 
     setTimeout(() => renderThreeLayout(), 600)
@@ -98,7 +87,7 @@ async function fetchGoogleSheetData(accessToken: string): Promise<void> {
     for (let i: number = 0; i < body.length; i++) {
         const row = body[i]
 
-        if (row.length < header.length) {
+        if (body[i].length < header.length) {
             continue
         }
 
