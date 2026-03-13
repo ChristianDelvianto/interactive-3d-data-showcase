@@ -67,7 +67,7 @@ Here's how it actually went:
 |---|---|---|
 | Table | 20 × 10 | Flat periodic-table style |
 | Sphere | Spherical wrap | All tiles distributed on a sphere surface |
-| Helix | Double helix | Custom — default Three.js demo only has single helix |
+| Helix | Double helix | Custom — the double helix was implemented from scratch, distributing tiles across two mirrored helical paths simultaneously |
 | Grid | 5 × 4 × 10 | 3D layered grid |
 | Tetrahedron | 4-face pyramid | Added on director's request, shipped same night |
 
