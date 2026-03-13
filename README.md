@@ -24,7 +24,7 @@ A 3D interactive data visualization web app built with **Vanilla JS/TS**, **Vani
 
 ## 🧠 The Story
 
-This project was built as a technical assignment for **[Kasatria Group of Companies](https://kasatria.com)** — a digital marketing and business transformation firm with offices across the UK, Singapore, Malaysia, and Vietnam.
+This project was built as a technical assignment for **[Kasatria Technologies](https://kasatria.com)** — a digital marketing and business transformation firm with offices across the UK, Singapore, Malaysia, and Vietnam.
 
 The brief: build a Three.js-based 3D data visualization tool, inspired by the [CSS3D periodic table demo](https://threejs.org/examples/#css3d_periodictable), within **7 days**.
 
@@ -104,10 +104,18 @@ npm run dev
 | Version | Date | What changed |
 |---|---|---|
 | **v1.03** | Mar 13, 2026 | Added local CSV sign-in mode via PapaParse, redeployed for public access |
-| **v1.02** | Nov 21, 2025 | Fixed tetrahedron mode, added in-app update logs (personal touch) |
+| **v1.02** | Nov 21, 2025 | Fixed tetrahedron mode, added in-app update logs **(personal touch)** |
 | **v1.01** | Nov 20, 2025 | Tetrahedron mode — director's request, shipped same night |
 | **v1.0** | Nov 19, 2025 | Table, Sphere, Double Helix, Grid modes — deployed to Vercel |
 | **v0** | Nov 19, 2025 | Project setup, Google OAuth, Sheets API, 3D rendering foundation |
+
+---
+
+## 📄 Assignment Brief
+
+The original assignment document is included for context — it shows the full scope of what was asked.
+
+📎 [`Kasatria_Assignment_Instructions.pdf`](./Kasatria_Assignment_Instructions.pdf)
 
 ---
 
