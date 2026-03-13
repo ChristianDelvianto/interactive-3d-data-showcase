@@ -12,13 +12,20 @@ A 3D interactive data visualization web app built with **Vanilla JS/TS**, **Vani
 
 > 5 visualization modes — all transitions are smooth and animated.
 
-| Table (20×10) | Sphere |
-|---|---|
-| *(screenshot)* | *(screenshot)* |
+### **Table Mode**
+<img src="screenshots/table.png" width="70%" />
 
-| Double Helix | Grid (5×4×10) | Tetrahedron |
-|---|---|---|
-| *(screenshot)* | *(screenshot)* | *(screenshot)* |
+### **Sphere Mode**
+<img src="screenshots/sphere.png" width="70%" />
+
+### **Double Helix Mode**
+<img src="screenshots/helix.png" width="70%" />
+
+### **Grid Mode**
+<img src="screenshots/grid.png" width="70%" />
+
+### **Tetrahedron Mode**
+<img src="screenshots/tetrahedron.png" width="70%" />
 
 ---
 
