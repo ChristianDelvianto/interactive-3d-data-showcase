@@ -5,10 +5,12 @@ import v1Layout from './versions/v1.ts'
 import v1_01Layout from './versions/v1_01.ts'
 import v1_02Layout from './versions/v1_02.ts'
 import v1_03Layout from './versions/v1_03.ts'
+import v1_04Layout from './versions/v1_04.ts'
 
 let isOpen = false;
 
 const logs: HTMLDivElement[] = [
+    v1_04Layout,
     v1_03Layout,
     v1_02Layout,
     v1_01Layout,
