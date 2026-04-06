@@ -1,11 +1,12 @@
 'use strict'
 
-const version = 'v1.02'
-const date: string = '21 Nov 2025'
+const version = '1.3.0'
+const date: string = '13 March 2026'
 
 const lists: string[] = [
-    'Fixed tetrahedron mode',
-    'Created update logs (Personal touch)'
+    'Added sign in mode without Google (Using local CSV data)',
+    'Installed \'papaparse\' package to process local CSV',
+    'Re-deployed to Vercel for public access',
 ]
 
 const layout = document.createElement('div')

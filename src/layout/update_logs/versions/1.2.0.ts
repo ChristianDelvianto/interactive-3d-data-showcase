@@ -1,10 +1,11 @@
 'use strict'
 
-const version = 'v1.01'
-const date: string = '20 Nov 2025'
+const version = '1.2.0'
+const date: string = '21 Nov 2025'
 
 const lists: string[] = [
-    'Created tetrahedron mode (Director\'s personal request)',
+    'Fixed tetrahedron mode',
+    'Created update logs (Personal touch)'
 ]
 
 const layout = document.createElement('div')

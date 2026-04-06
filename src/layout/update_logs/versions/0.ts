@@ -1,14 +1,13 @@
 'use strict'
 
-const version = 'v1'
+const version = '0'
 const date: string = '19 Nov 2025'
 
 const lists: string[] = [
-    'Created table mode',
-    'Created sphere mode',
-    'Created helix (double helix) mode',
-    'Created grid mode',
-    'Deployed on Vercel'
+    'Setting up the project using Vite, vanilla CSS, and vanilla JavaScript/TypeScript.',
+    'Created login layout, login button and integrate it with Google OAuth',
+    'Created loading layout and integrate with Google Sheet API',
+    'Created three layout to render animation'
 ]
 
 const layout = document.createElement('div')

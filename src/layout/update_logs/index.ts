@@ -1,24 +1,22 @@
 'use strict'
 import './style.css'
-import v0Layout from './versions/v0.ts'
-import v1Layout from './versions/v1.ts'
-import v1_01Layout from './versions/v1_01.ts'
-import v1_02Layout from './versions/v1_02.ts'
-import v1_03Layout from './versions/v1_03.ts'
-import v1_04Layout from './versions/v1_04.ts'
+import v_0_Layout from './versions/0.ts'
+import v_1_0_0_Layout from './versions/1.0.0.ts'
+import v_1_1_0_Layout from './versions/1.1.0.ts'
+import v_1_2_0_Layout from './versions/1.2.0.ts'
+import v_1_3_0_Layout from './versions/1.3.0.ts'
+import v_1_4_0_Layout from './versions/1.4.0.ts'
 
 let isOpen = false;
 
 const logs: HTMLDivElement[] = [
-    v1_04Layout,
-    v1_03Layout,
-    v1_02Layout,
-    v1_01Layout,
-    v1Layout,
-    v0Layout,
+    v_1_4_0_Layout,
+    v_1_3_0_Layout,
+    v_1_2_0_Layout,
+    v_1_1_0_Layout,
+    v_1_0_0_Layout,
+    v_0_Layout,
 ]
-
-const currentVersion = import.meta.env.VITE_APP_CURRENT_VERSION ?? 0
 
 const layout = document.createElement('div')
 layout.setAttribute('id', 'update-logs')
@@ -69,7 +67,7 @@ layout.innerHTML = `
                     font-weight: bold;
                     margin-bottom: 12px;
                 "
-            >Current version: ${currentVersion}</span>
+            >Current version: ${APP_VERSION}</span>
 
             <hr
                 style="border-top: 1px solid gray;
@@ -103,7 +101,6 @@ function toggle(value: boolean): void {
 };
 
 export {
-    currentVersion,
     isOpen,
     toggle,
 }

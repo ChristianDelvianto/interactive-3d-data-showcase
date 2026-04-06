@@ -1,6 +1,6 @@
 'use strict'
 
-const version = 'v1.04'
+const version = '1.4.0'
 const date: string = '14 March 2026'
 
 const lists: string[] = [
