@@ -45,7 +45,6 @@ Here's how it actually went:
 | Nov 20, 2025 | Tetrahedron mode shipped **the same night.** |
 | Nov 21, 2025 | Bug fixed. Added version update logs (as a personal touch). |
 | Dec 4, 2025 | Received a job offer as Software Developer at Kasatria. |
-| Mar 13, 2026 | Added public CSV mode so anyone can explore the app without a Google account. |
 
 ---
 
@@ -103,20 +102,6 @@ cp .env.example .env
 # Start dev server
 npm run dev
 ```
-
----
-
-## 📦 Changelog
-
-| Version | Date | What changed |
-|---|---|---|
-| **v1.4.1** | Apr 6, 2026 | APP_VERSION now comes from package.json |
-| **v1.4.0** | Mar 14, 2026 | Added public assignment link (Google Drive) |
-| **v1.3.0** | Mar 13, 2026 | Added local CSV sign-in mode via PapaParse, redeployed for public access |
-| **v1.2.0** | Nov 21, 2025 | Fixed tetrahedron mode, added in-app update logs **(personal touch)** |
-| **v1.1.0** | Nov 20, 2025 | Tetrahedron mode — director's request, shipped same night |
-| **v1.0.0** | Nov 19, 2025 | Table, Sphere, Double Helix, Grid modes — deployed to Vercel |
-| **v0.0.0** | Nov 19, 2025 | Project setup, Google OAuth, Sheets API, 3D rendering foundation |
 
 ---
 
