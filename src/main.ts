@@ -7,6 +7,7 @@ import { addNavigation, init, users, windowResize } from './layout/three/index.t
 import type { UserCSV, UserObject } from './types/user'
 
 declare global {
+    const APP_VERSION: string;
     const google: any;
 }
 

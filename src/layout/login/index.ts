@@ -1,8 +1,6 @@
 'use strict'
 import './style.css'
 
-const currentVersion = import.meta.env.VITE_APP_CURRENT_VERSION ?? 0
-
 const layout = document.createElement('div')
 layout.setAttribute('id', 'login')
 layout.innerHTML = `
@@ -107,7 +105,7 @@ layout.innerHTML = `
                 margin-top: 24px;
             "
         >
-            <span style="font-size: 14px;">v${currentVersion}</span>
+            <span style="font-size: 14px;">v${APP_VERSION}</span>
 
             <button
                 id="view-update"
