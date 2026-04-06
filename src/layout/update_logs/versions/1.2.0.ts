@@ -4,7 +4,7 @@ const version = '1.2.0'
 const date: string = '21 Nov 2025'
 
 const lists: string[] = [
-    'Fixed tetrahedron mode',
+    'Fixed tetrahedron mode where the shape was rounded like a sphere',
     'Created update logs (Personal touch)'
 ]
 
