@@ -62,12 +62,9 @@ async function getLocalData(): Promise<void> {
 }
 
 function requestAccessToken(): void {
-    // Update logs is opened
-    if (isOpen) {
-        return
+    if (!isOpen) {
+        tokenClient.requestAccessToken({ prompt: '' })
     }
-
-    tokenClient.requestAccessToken({ prompt: '' })
 }
 
 async function fetchGoogleSheetData(accessToken: string): Promise<void> {

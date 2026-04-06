@@ -1,13 +1,10 @@
 'use strict'
 
-const version = '0.0.0'
-const date: string = '19 Nov 2025'
+const version = '1.4.1'
+const date: string = '6 April 2026'
 
 const lists: string[] = [
-    'Setting up the project using Vite, vanilla CSS, and vanilla JavaScript/TypeScript.',
-    'Created login layout, login button and integrate it with Google OAuth',
-    'Created loading layout and integrate with Google Sheet API',
-    'Created three layout to render animation'
+    'Removed .env.production file and migrate app version to package.json',
 ]
 
 const layout = document.createElement('div')
