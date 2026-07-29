@@ -4,7 +4,7 @@ const version = '1.1.0'
 const date: string = '20 Nov 2025'
 
 const lists: string[] = [
-    'Created tetrahedron mode (Director\'s personal request)',
+    'Created tetrahedron mode (Extra assignment)',
 ]
 
 const layout = document.createElement('div')
