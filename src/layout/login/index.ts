@@ -199,14 +199,6 @@ layout.innerHTML = `
                 >Send an email</span>
             </a>
         </div>
-
-        <a
-            href="https://drive.google.com/file/d/1QLt5NI_AdziI7t2Nldmn7JR7Q-Uj9Yqu/view?usp=sharing"
-            style="display: block;
-                padding: 24px 0;
-                text-align: center;
-            "
-        >View the assignment</a>
     </div>
 `
 
