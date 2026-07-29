@@ -7,10 +7,12 @@ import v_1_2_0_Layout from './versions/1.2.0.ts'
 import v_1_3_0_Layout from './versions/1.3.0.ts'
 import v_1_4_0_Layout from './versions/1.4.0.ts'
 import v_1_4_1_Layout from './versions/1.4.1.ts'
+import v_1_4_2_Layout from './versions/1.4.2.ts'
 
 let isOpen = false;
 
 const logs: HTMLDivElement[] = [
+    v_1_4_2_Layout,
     v_1_4_1_Layout,
     v_1_4_0_Layout,
     v_1_3_0_Layout,
