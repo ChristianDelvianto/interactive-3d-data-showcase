@@ -105,11 +105,10 @@ npm run dev
 
 ---
 
-## 📄 Assignment Brief
+## What I Would Like To Improve (3rd October 2026)
 
-The original assignment document is included for context — it shows the full scope of what was asked.
-
-📎 [`Kasatria_Assignment_Instructions.pdf`](./Kasatria_Assignment_Instructions.pdf)
+- Refactor and clean up the codebase
+- Add Playwright tests
 
 ---
 
